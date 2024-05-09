@@ -1,4 +1,4 @@
-import { useState } from "react";
+"use client";
 
 import useStore from "../store/Count";
 import Image from "next/image";
@@ -8,7 +8,7 @@ import { BsCart4 } from "react-icons/bs";
 const ItemProduct = () => {
   const { count, inc, dec } = useStore();
   return (
-    <div className="flex justify-center gap-6">
+    <div className="flex justify-center gap-6 pt-6">
       <div className="p-6 bg-sky-200 max-w-fit rounded-lg">
         <div>
           <Image
